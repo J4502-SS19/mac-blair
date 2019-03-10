@@ -35,29 +35,30 @@ body {
     border-style: solid;
 }
 
-#nav {
-    padding: 0;
-	  list-style-type: none;
+.container {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background: #fff;
+  	border-radius: 5px;
+	margin: auto;
+}
+@media (min-width: 600px) {
+	.container {
+		flex-direction: row;
+		justify-content: space-around;
+	}
 }
 
-#nav li {
-		margin: 0;
-		padding: 0;
-		border-bottom: 1px solid #fff;
-}
-
-#nav a:link, #nav a:visited {
-		display: block;
-		color: #fff;
-		background-color: #FFD863;
-		text-align: center;
-		text-decoration: none;
-		padding: 10px;
-		font-family: "Maitree", Helvetica, sans-serif;
-}
-
-#nav a:hover, #nav a:active {
-		background-color: #FFCF41;
+.item {
+  flex-basis: auto;
+	color: #fff;
+	padding: 15px;
+	margin: 5px;
+	background: #FFD863;
+	border-radius: 3px;
+  text-align: center;
+  font-family: "Maitree", Helvetica, sans-serif;
 }
 
 #footer {
